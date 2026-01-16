@@ -1,0 +1,33 @@
+{
+    "DecisionTree": {
+        "best_params": {
+            "max_depth": 5,
+            "min_samples_leaf": 20
+        },
+        "best_score": 0.8105847655093319
+    },
+    "RandomForest": {
+        "best_params": {
+            "max_depth": null,
+            "max_features": "sqrt",
+            "min_samples_leaf": 5,
+            "n_estimators": 200
+        },
+        "best_score": 0.8947140849565801
+    },
+    "HistGradientBoosting": {
+        "best_params": {
+            "learning_rate": 0.01,
+            "max_depth": 10,
+            "max_iter": 500
+        },
+        "best_score": 0.8921721165877986
+    },
+    "AdaBoost": {
+        "best_params": {
+            "learning_rate": 0.1,
+            "n_estimators": 2000
+        },
+        "best_score": 0.8708525068008584
+    }
+}

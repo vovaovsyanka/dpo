@@ -15,7 +15,7 @@ Thumbs.db
 # Виртуальные окружения Python
 .venv/
 venv/
-env/
+env*/
 ENV/
 .conda/
 .venv*/
@@ -55,3 +55,4 @@ logs/
 *.tmp
 *.bak
 *.old
+

@@ -1,0 +1,124 @@
+{
+    "model_name": "StackingClassifier",
+    "final_estimator": "Pipeline",
+    "base_estimators": [
+        {
+            "name": "LogisticRegression",
+            "estimator_type": "Pipeline"
+        },
+        {
+            "name": "DecisionTreeClassifier",
+            "estimator_type": "DecisionTreeClassifier"
+        },
+        {
+            "name": "RandomForestClassifier",
+            "estimator_type": "RandomForestClassifier"
+        },
+        {
+            "name": "AdaBoostClassifier",
+            "estimator_type": "AdaBoostClassifier"
+        },
+        {
+            "name": "HistGradientBoostingClassifier",
+            "estimator_type": "HistGradientBoostingClassifier"
+        }
+    ],
+    "cv_parameter": "StratifiedKFold(n_splits=5)",
+    "passthrough": false,
+    "test_metrics": {
+        "accuracy": 0.9404,
+        "f1": 0.569364161849711,
+        "roc_auc": 0.9009759859904025
+    },
+    "permutation_importance": {
+        "top_15_features": [
+            {
+                "feature": "f54",
+                "importance_mean": 0.026040544376836172,
+                "importance_std": 0.0036455778318573726
+            },
+            {
+                "feature": "f25",
+                "importance_mean": 0.024064117166203058,
+                "importance_std": 0.0034423773996655133
+            },
+            {
+                "feature": "f58",
+                "importance_mean": 0.02356535018863004,
+                "importance_std": 0.0076028806395259385
+            },
+            {
+                "feature": "f38",
+                "importance_mean": 0.013957523146960405,
+                "importance_std": 0.002248571896305188
+            },
+            {
+                "feature": "f53",
+                "importance_mean": 0.010465983288356084,
+                "importance_std": 0.005058256863485516
+            },
+            {
+                "feature": "f47",
+                "importance_mean": 0.009184135909512104,
+                "importance_std": 0.0029490272242397304
+            },
+            {
+                "feature": "f04",
+                "importance_mean": 0.007820714092710878,
+                "importance_std": 0.002122323968638589
+            },
+            {
+                "feature": "f41",
+                "importance_mean": 0.003937890556860857,
+                "importance_std": 0.0033546306047252724
+            },
+            {
+                "feature": "f33",
+                "importance_mean": 0.003400559563020833,
+                "importance_std": 0.002534578353024812
+            },
+            {
+                "feature": "f08",
+                "importance_mean": 0.003348827346077332,
+                "importance_std": 0.002372819545694098
+            },
+            {
+                "feature": "f13",
+                "importance_mean": 0.003098375009833254,
+                "importance_std": 0.0022705346948876915
+            },
+            {
+                "feature": "f15",
+                "importance_mean": 0.002486310201764075,
+                "importance_std": 0.0010211094646839162
+            },
+            {
+                "feature": "f07",
+                "importance_mean": 0.002354371671608846,
+                "importance_std": 0.0009824851931824973
+            },
+            {
+                "feature": "f34",
+                "importance_mean": 0.0016051523577918503,
+                "importance_std": 0.0011239663258608818
+            },
+            {
+                "feature": "f11",
+                "importance_mean": 0.0013764190018844325,
+                "importance_std": 0.004100590394648266
+            }
+        ]
+    },
+    "experiment_info": {
+        "dataset": "S06-hw-dataset-04.csv",
+        "test_size": 0.2,
+        "random_state": 42,
+        "stratify": true,
+        "scoring": "roc_auc",
+        "target_distribution": {
+            "class_0": 0.9508,
+            "class_1": 0.0492
+        },
+        "best_model_selection_criteria": "ROC-AUC"
+    }
+}
