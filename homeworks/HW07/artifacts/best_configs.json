@@ -1,0 +1,35 @@
+{
+  "dataset02": {
+    "best_method": "KMeans",
+    "parameters": {
+      "n_clusters": 16,
+      "random_state": 42,
+      "n_init": 10
+    },
+    "criterion": "\u041d\u0430\u0438\u0432\u044b\u0441\u0448\u0438\u0439 silhouette score (0.284) \u0438 \u0432\u044b\u0441\u043e\u043a\u0430\u044f \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u043e\u0441\u0442\u044c (\u0441\u0440\u0435\u0434\u043d\u0438\u0439 ARI=0.839)",
+    "stability_check": {
+      "method": "5 \u0437\u0430\u043f\u0443\u0441\u043a\u043e\u0432 \u0441 \u0440\u0430\u0437\u043d\u044b\u043c\u0438 random_state",
+      "average_ARI": 0.8439087017219833,
+      "min_ARI": 0.7551668826918494
+    }
+  },
+  "dataset03": {
+    "best_method": "Kmeans",
+    "parameters": {
+      "n_clusters": 3,
+      "random_state": 42,
+      "n_init": 10
+    },
+    "criterion": "\u041d\u0430\u0438\u0431\u043e\u043b\u0435\u0435 \u0447\u0435\u0442\u043a\u043e\u0435 \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0434\u0430\u043d\u043d\u044b\u0445"
+  },
+  "dataset04": {
+    "best_method": "KMeans",
+    "parameters": {
+      "n_clusters": 5,
+      "random_state": 42,
+      "n_init": 10
+    },
+    "criterion": "\u041d\u0430\u0438\u0432\u044b\u0441\u0448\u0438\u0439 silhouette score \u0432 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0440\u0430\u0437\u043c\u0435\u0440\u043d\u043e\u0441\u0442\u0438",
+    "note": "DBSCAN \u0441\u0442\u0440\u0430\u0434\u0430\u0435\u0442 \u043e\u0442 \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u0438\u044f \u0440\u0430\u0437\u043c\u0435\u0440\u043d\u043e\u0441\u0442\u0438"
+  }
+}
