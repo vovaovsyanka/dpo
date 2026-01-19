@@ -29,7 +29,7 @@
 
 1. DummyClassifier (baseline): Стратегия "most_frequent"
 2. LogisticRegression (baseline из S05): С балансировкой классов и стандартизацией признаков
-3. DecisionTreeClassifier: Контроль сложности через `max_depth` и `min_samples_leaf`
+3. DecisionTreeClassifier: Контроль сложности через `max_depth`, `ccp_alpha` и `min_samples_leaf`
 4. RandomForestClassifier: Подбирались `n_estimators`, `max_depth`, `max_features`, `min_samples_leaf`
 5. HistGradientBoostingClassifier: Подбирались `max_iter`, `learning_rate`, `max_depth`
 6. AdaBoostClassifier: Подбирались `n_estimators`, `learning_rate`
@@ -43,7 +43,7 @@
 |--------|----------|----------|---------|
 | DummyClassifier | 0.9508 | 0.0000 | - |
 | LogisticRegression | 0.7756 | 0.254 | 0.8355 |
-| DecisionTree | 0.877 | 0.3705 | 0.8308 |
+| DecisionTree | 0.877 | 0.3705 | 0.8328 |
 | RandomForest | 0.9774 | 0.705 | 0.8992 |
 | HistGradientBoosting | 0.9496 | 0.6025 | 0.8982 |
 | AdaBoost | 0.961 | 0.3648 | 0.8743 |
