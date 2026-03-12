@@ -55,4 +55,4 @@ logs/
 *.tmp
 *.bak
 *.old
-
+data/
