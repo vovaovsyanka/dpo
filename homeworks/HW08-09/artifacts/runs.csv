@@ -1,8 +1,8 @@
-experiment_id, dataset, seed, model_summary                                                   , optimizer, lr   , momentum, weight_decay, epochs_trained, best_val_accuracy   , best_val_loss
-E1           , EMNIST ,   42, "hidden=[512,256], ReLU, no dropout, no BN"                     , Adam     , 0.001,         ,       0.0   ,             40, 0.8497783687943262  , 0.4625376522963774
-E2           , EMNIST ,   42, "hidden=[512,256], ReLU, dropout=0.3"                           , Adam     , 0.001,         ,       0.0   ,             40, 0.8621010638297872  , 0.4207238958237019
-E3           , EMNIST ,   42, "hidden=[512,256], ReLU, BN"                                    , Adam     , 0.001,         ,       0.0   ,             40, 0.8520833333333333  , 0.4398003375699334
-E4           , EMNIST ,   42, "hidden=[512,256], ReLU, dropout=0.3, early_stoping(patience=3)", Adam     , 0.001,         ,       0.0   ,             15, 0.8578457446808511  , 0.42456953643907047
-O1           , EMNIST ,   42, "hidden=[512,256], ReLU, dropout=0.3)"                          , Adam     , 0.1  ,         ,       0.0   ,              6, 0.022340425531914895, 3.858729392586025
-O2           , EMNIST ,   42, "hidden=[512,256], ReLU, dropout=0.3)"                          , Adam     , 1e-05,         ,       0.0   ,              6, 0.5690602836879433  , 1.7462420078034098
-O3           , EMNIST ,   42, "hidden=[512,256], ReLU, dropout=0.3)"                          , SGD      , 0.001,      0.9,       0.0001,             15, 0.7116578014184397  , 1.0163852223267793
+experiment_id,dataset,seed,model_summary,optimizer,lr,momentum,weight_decay,epochs_trained,best_val_accuracy,best_val_loss
+E1,EMNIST,42,"hidden=[512,256], ReLU, no dropout, no BN",Adam,0.001,,0.0,40,0.8497783687943262,0.4625376522963774
+E2,EMNIST,42,"hidden=[512,256], ReLU, dropout=0.3",Adam,0.001,,0.0,40,0.8621010638297872,0.4207238958237019
+E3,EMNIST,42,"hidden=[512,256], ReLU, BN",Adam,0.001,,0.0,40,0.8520833333333333,0.4398003375699334
+E4,EMNIST,42,"hidden=[512,256], ReLU, dropout=0.3, early_stoping(patience=3)",Adam,0.001,,0.0,15,0.8578457446808511,0.42456953643907047
+O1,EMNIST,42,"hidden=[512,256], ReLU, dropout=0.3)",Adam,0.1,,0.0,6,0.022340425531914895,3.858729392586025
+O2,EMNIST,42,"hidden=[512,256], ReLU, dropout=0.3)",Adam,1e-05,,0.0,6,0.5690602836879433,1.7462420078034098
+O3,EMNIST,42,"hidden=[512,256], ReLU, dropout=0.3)",SGD,0.001,0.9,0.0001,15,0.7116578014184397,1.0163852223267793
