@@ -1,0 +1,10 @@
+{
+  "experiment_id": "C4",
+  "model": "ResNet18",
+  "num_classes": 100,
+  "augmentations": true,
+  "pretrained": true,
+  "seed": 42,
+  "test_accuracy": 0.7046,
+  "best_val_accuracy": 0.6996
+}
