@@ -1,9 +1,21 @@
 {
   "experiment_id": "C4",
   "model": "ResNet18",
+  "dataset": "CIFAR100",
   "num_classes": 100,
   "augmentations": true,
   "pretrained": true,
+  "pretrained_weights": "ImageNet",
+  "freeze_backbone": false,
+  "trainable_layers": [
+    "layer4",
+    "fc"
+  ],
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epochs": 20,
+  "optimizer": "Adam",
+  "weight_decay": 0.0001,
   "seed": 42,
   "test_accuracy": 0.7046,
   "best_val_accuracy": 0.6996

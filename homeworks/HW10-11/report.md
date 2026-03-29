@@ -37,7 +37,7 @@
 
 ### 3.2. Часть B: structured vision
 
-- Датасет: **Oxford-IIIT Pet**
+- Датасет: **OxfordIIITPet**
 - Трек: **segmentation**
 - Что считается ground truth: исходная маска содержит метки 1–3 (background, foreground, boundary). Для бинарной сегментации мы свели задачу к foreground (метка 1) vs background (все остальные).
 - Какие предсказания использовались: DeepLabV3 с ResNet-50 backbone, предобученная на COCO. Для получения бинарной маски животного мы объединяем классы «cat» (индекс 8) и «dog» (индекс 12) через `max` их softmax вероятностей.

@@ -8,7 +8,7 @@
   "batch_size": 64,
   "learning_rate": 0.001,
   "epochs": 30,
-  "best_val_loss": 0.15240282863378524,
+  "best_val_loss": 0.1323885376414945,
   "scaler": "StandardScaler",
   "scaler_mean": [
     128.20576058201058

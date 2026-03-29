@@ -1,7 +1,7 @@
 experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
-C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,20,0.4022,,,,,"aug=False, pretrained=False"
-C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,20,0.4587,,,,,"aug=True, pretrained=False"
-C3,classification,CIFAR100,42,ResNet18,Adam,0.001,20,0.5149,,,,,"aug=True, pretrained=True"
-C4,classification,CIFAR100,42,ResNet18,Adam,0.001,20,0.6996,0.7046,,,,"aug=True, pretrained=True"
+C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,20,0.4022,,,,,aug=False
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,20,0.4587,,,,,aug=True
+C3,classification,CIFAR100,42,ResNet18,Adam,0.001,20,0.5149,,,,,aug=True
+C4,classification,CIFAR100,42,ResNet18,Adam,0.001,20,0.6996,0.7046,,,,aug=True
 V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50 (COCO),inference only,,0,,,0.7708134283739666,0.978684528266527,0.7571563994529156,argmax
 V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50 (COCO),inference only,,0,,,0.7756066438622744,0.9748166340802774,0.7590600283507413,threshold=0.5 + remove small components (area<500)
