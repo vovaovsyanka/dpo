@@ -1,0 +1,3 @@
+query,before_retrieved_sources,after_retrieved_sources,changed
+How does a transistor work?,"doc_0006, doc_0000, doc_0014, doc_0014, doc_0009","new_doc_01, new_doc_01, new_doc_01, new_doc_01, doc_0006",True
+digital signal processing,"doc_0009, doc_0016, doc_0020, doc_0009, doc_0020","new_doc_01, new_doc_01, new_doc_01, new_doc_01, doc_0009",True
