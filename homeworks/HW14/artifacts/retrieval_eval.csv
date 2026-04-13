@@ -1,4 +1,4 @@
-query,expected_source,retrieved_sources,hit@5,recall@5,rank_of_first_relevant
+query,expected_source,retrieved_sources,hit_at_k,recall_at_k,rank_of_first_relevant
 What is the purpose of the space program according to the post?,doc_0009,"doc_0020, doc_0020, doc_0020, doc_0004, doc_0009",1,1.0,5
 How can Crohn's disease patients manage raw vegetables?,doc_0005,"doc_0005, doc_0005, doc_0005, doc_0005, doc_0005",1,1.0,1
 What is the error in the original Star Wars movie?,doc_0006,"doc_0006, doc_0007, doc_0010, doc_0007, doc_0022",1,1.0,1
