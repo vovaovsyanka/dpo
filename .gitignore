@@ -55,5 +55,5 @@ logs/
 *.tmp
 *.bak
 *.old
-data/
 results_emotion/
+bigdata/
