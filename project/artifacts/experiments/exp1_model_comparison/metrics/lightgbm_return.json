@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_model_comparison",
+  "model": "lightgbm",
+  "type": "return",
+  "horizon": 20,
+  "baseline": {
+    "rmse": 0.106697,
+    "r2": -0.0015
+  },
+  "metrics": {
+    "rmse": 0.146841,
+    "mae": 0.106554,
+    "r2": -0.8969
+  }
+}
