@@ -1,0 +1,18 @@
+{
+  "experiment": "exp1_model_comparison",
+  "model": "lightgbm",
+  "type": "binary",
+  "horizon": 20,
+  "baseline": {
+    "accuracy": 0.494,
+    "auc": 0.5
+  },
+  "metrics": {
+    "accuracy": 0.4879,
+    "precision": 0.4952,
+    "recall": 0.6304,
+    "f1": 0.5547,
+    "auc": 0.4676,
+    "logloss": 0.7351
+  }
+}

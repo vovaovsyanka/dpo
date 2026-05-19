@@ -1,0 +1,140 @@
+[
+  {
+    "experiment": "exp3_top_k",
+    "k": 10,
+    "type": "binary",
+    "metrics": {
+      "accuracy": 0.5396,
+      "precision": 0.5525,
+      "recall": 0.4747,
+      "f1": 0.5106,
+      "auc": 0.5614,
+      "logloss": 0.698
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 20,
+    "type": "binary",
+    "metrics": {
+      "accuracy": 0.4993,
+      "precision": 0.5036,
+      "recall": 0.7449,
+      "f1": 0.6009,
+      "auc": 0.5468,
+      "logloss": 0.709
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 30,
+    "type": "binary",
+    "metrics": {
+      "accuracy": 0.5213,
+      "precision": 0.5247,
+      "recall": 0.5718,
+      "f1": 0.5473,
+      "auc": 0.5556,
+      "logloss": 0.6981
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 50,
+    "type": "binary",
+    "metrics": {
+      "accuracy": 0.5147,
+      "precision": 0.5183,
+      "recall": 0.5807,
+      "f1": 0.5477,
+      "auc": 0.5311,
+      "logloss": 0.7045
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 100,
+    "type": "binary",
+    "metrics": {
+      "accuracy": 0.5288,
+      "precision": 0.5323,
+      "recall": 0.5676,
+      "f1": 0.5494,
+      "auc": 0.5569,
+      "logloss": 0.6916
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 109,
+    "type": "binary",
+    "metrics": {
+      "accuracy": 0.5301,
+      "precision": 0.5322,
+      "recall": 0.5898,
+      "f1": 0.5595,
+      "auc": 0.5483,
+      "logloss": 0.6975
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 10,
+    "type": "return",
+    "metrics": {
+      "rmse": 0.176162,
+      "mae": 0.114643,
+      "r2": -0.104
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 20,
+    "type": "return",
+    "metrics": {
+      "rmse": 0.204703,
+      "mae": 0.136987,
+      "r2": -0.4907
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 30,
+    "type": "return",
+    "metrics": {
+      "rmse": 0.186623,
+      "mae": 0.124303,
+      "r2": -0.239
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 50,
+    "type": "return",
+    "metrics": {
+      "rmse": 0.20348,
+      "mae": 0.135395,
+      "r2": -0.473
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 100,
+    "type": "return",
+    "metrics": {
+      "rmse": 0.19901,
+      "mae": 0.134278,
+      "r2": -0.409
+    }
+  },
+  {
+    "experiment": "exp3_top_k",
+    "k": 109,
+    "type": "return",
+    "metrics": {
+      "rmse": 0.186383,
+      "mae": 0.123615,
+      "r2": -0.2359
+    }
+  }
+]

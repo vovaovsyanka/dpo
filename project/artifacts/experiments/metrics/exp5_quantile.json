@@ -1,0 +1,8 @@
+[
+  {
+    "experiment": "exp5_quantile",
+    "coverage_q10_q90": 0.6747,
+    "mean_interval_width": 0.2476,
+    "median_interval_width": 0.2335
+  }
+]

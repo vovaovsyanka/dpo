@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_model_comparison",
+  "model": "ridge",
+  "type": "return",
+  "horizon": 20,
+  "baseline": {
+    "rmse": 0.168961,
+    "r2": -0.0156
+  },
+  "metrics": {
+    "rmse": 0.168346,
+    "mae": 0.10882,
+    "r2": -0.0082
+  }
+}

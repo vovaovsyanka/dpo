@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_model_comparison",
+  "model": "catboost",
+  "type": "return",
+  "horizon": 20,
+  "baseline": {
+    "rmse": 0.168961,
+    "r2": -0.0156
+  },
+  "metrics": {
+    "rmse": 0.195334,
+    "mae": 0.13208,
+    "r2": -0.3574
+  }
+}

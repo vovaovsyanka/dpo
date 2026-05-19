@@ -1,0 +1,39 @@
+[
+  {
+    "experiment": "exp4_ensemble",
+    "variant": "mean",
+    "type": "binary",
+    "baseline": {
+      "accuracy": 0.494,
+      "auc": 0.5
+    },
+    "metrics": {
+      "accuracy": 0.5184,
+      "auc": 0.5285
+    },
+    "weights": {
+      "catboost": 0.3333333333333333,
+      "lightgbm": 0.3333333333333333,
+      "xgboost": 0.3333333333333333
+    }
+  },
+  {
+    "experiment": "exp4_ensemble",
+    "variant": "mean",
+    "type": "return",
+    "baseline": {
+      "rmse": 0.168961,
+      "r2": -0.0156
+    },
+    "metrics": {
+      "rmse": 0.1824,
+      "mae": 0.12,
+      "r2": -0.1831
+    },
+    "weights": {
+      "catboost": 0.3333333333333333,
+      "lightgbm": 0.3333333333333333,
+      "xgboost": 0.3333333333333333
+    }
+  }
+]

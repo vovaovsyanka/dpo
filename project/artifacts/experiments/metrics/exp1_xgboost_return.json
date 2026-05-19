@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_model_comparison",
+  "model": "xgboost",
+  "type": "return",
+  "horizon": 20,
+  "baseline": {
+    "rmse": 0.168961,
+    "r2": -0.0156
+  },
+  "metrics": {
+    "rmse": 0.245463,
+    "mae": 0.150175,
+    "r2": -1.1435
+  }
+}
