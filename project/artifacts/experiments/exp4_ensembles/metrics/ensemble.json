@@ -3,12 +3,12 @@
     "variant": "mean",
     "type": "binary",
     "baseline": {
-      "accuracy": 0.4929,
+      "accuracy": 0.5157,
       "auc": 0.5
     },
     "metrics": {
-      "accuracy": 0.5076,
-      "auc": 0.4984
+      "accuracy": 0.4901,
+      "auc": 0.4774
     },
     "weights": {
       "catboost": 0.3333333333333333,
@@ -20,30 +20,30 @@
     "variant": "weighted",
     "type": "binary",
     "baseline": {
-      "accuracy": 0.4929,
+      "accuracy": 0.5157,
       "auc": 0.5
     },
     "metrics": {
-      "accuracy": 0.5074,
-      "auc": 0.4993
+      "accuracy": 0.4904,
+      "auc": 0.4778
     },
     "weights": {
-      "catboost": 0.3485294209204693,
-      "lightgbm": 0.33192992060141924,
-      "xgboost": 0.3195406584781114
+      "catboost": 0.3378759654211529,
+      "lightgbm": 0.33372510298556146,
+      "xgboost": 0.32839893159328565
     }
   },
   {
     "variant": "mean",
     "type": "return",
     "baseline": {
-      "rmse": 0.106697,
-      "r2": -0.0015
+      "rmse": 0.115566,
+      "r2": -0.0051
     },
     "metrics": {
-      "rmse": 0.1262,
-      "mae": 0.0931,
-      "r2": -0.4019
+      "rmse": 0.1352,
+      "mae": 0.0961,
+      "r2": -0.3764
     },
     "weights": {
       "catboost": 0.3333333333333333,
@@ -55,18 +55,18 @@
     "variant": "weighted",
     "type": "return",
     "baseline": {
-      "rmse": 0.106697,
-      "r2": -0.0015
+      "rmse": 0.115566,
+      "r2": -0.0051
     },
     "metrics": {
-      "rmse": 0.1238,
-      "mae": 0.0908,
-      "r2": -0.3483
+      "rmse": 0.1342,
+      "mae": 0.0954,
+      "r2": -0.356
     },
     "weights": {
-      "catboost": 0.37314631722844666,
-      "lightgbm": 0.36491543436843477,
-      "xgboost": 0.2619382484031185
+      "catboost": 0.32691761803477803,
+      "lightgbm": 0.37452274250509027,
+      "xgboost": 0.2985596394601318
     }
   }
 ]

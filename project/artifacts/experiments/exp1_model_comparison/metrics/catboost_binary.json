@@ -4,15 +4,15 @@
   "type": "binary",
   "horizon": 20,
   "baseline": {
-    "accuracy": 0.4929,
+    "accuracy": 0.5157,
     "auc": 0.5
   },
   "metrics": {
-    "accuracy": 0.5292,
-    "precision": 0.5219,
-    "recall": 0.5341,
-    "f1": 0.5279,
-    "auc": 0.5556,
-    "logloss": 0.7092
+    "accuracy": 0.5876,
+    "precision": 0.5735,
+    "recall": 0.7815,
+    "f1": 0.6615,
+    "auc": 0.6466,
+    "logloss": 0.679
   }
 }
