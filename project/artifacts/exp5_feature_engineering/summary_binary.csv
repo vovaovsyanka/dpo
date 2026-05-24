@@ -1,0 +1,17 @@
+,accuracy,accuracy_std,auc,auc_std
+Baseline,0.53,0.0084,0.5229,0.012
+Correlation filter,0.5613,0.028,0.561,0.0313
+No multicollinearity,0.5198,0.0355,0.5418,0.0425
+PCA,0.5266,0.0376,0.5441,0.0552
+With target lags,0.7644,0.0227,0.8642,0.0117
+Ablation: remove price_technical,0.5412,0.016,0.5693,0.0167
+Ablation: remove volatility,0.5217,0.0124,0.5427,0.0172
+Ablation: remove volume,0.5196,0.0349,0.5202,0.0508
+Ablation: remove price_lags,0.5361,0.0165,0.5292,0.036
+Ablation: remove macro,0.5044,0.0175,0.4799,0.0114
+Ablation: remove news,0.5128,0.0235,0.5076,0.0259
+Ablation: remove temporal,0.5542,0.0172,0.5709,0.0216
+Ablation: remove market,0.5155,0.0062,0.5456,0.0362
+Horizon 5d,0.5159,0.0144,0.5177,0.0172
+Horizon 20d,0.53,0.0084,0.5229,0.012
+Horizon 200d,0.5738,0.0673,0.5638,0.0527

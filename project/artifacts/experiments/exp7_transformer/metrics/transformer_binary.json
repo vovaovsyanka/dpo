@@ -1,8 +1,0 @@
-{
-  "type": "binary",
-  "seq_len": 5,
-  "metrics": {
-    "accuracy": 0.5343,
-    "auc": 0.5892
-  }
-}
