@@ -1,17 +1,17 @@
 ,accuracy,accuracy_std,auc,auc_std
-Baseline,0.53,0.0084,0.5229,0.012
-Correlation filter,0.5613,0.028,0.561,0.0313
-No multicollinearity,0.5198,0.0355,0.5418,0.0425
-PCA,0.5266,0.0376,0.5441,0.0552
-With target lags,0.7644,0.0227,0.8642,0.0117
-Ablation: remove price_technical,0.5412,0.016,0.5693,0.0167
-Ablation: remove volatility,0.5217,0.0124,0.5427,0.0172
-Ablation: remove volume,0.5196,0.0349,0.5202,0.0508
-Ablation: remove price_lags,0.5361,0.0165,0.5292,0.036
-Ablation: remove macro,0.5044,0.0175,0.4799,0.0114
-Ablation: remove news,0.5128,0.0235,0.5076,0.0259
-Ablation: remove temporal,0.5542,0.0172,0.5709,0.0216
-Ablation: remove market,0.5155,0.0062,0.5456,0.0362
-Horizon 5d,0.5159,0.0144,0.5177,0.0172
-Horizon 20d,0.53,0.0084,0.5229,0.012
-Horizon 200d,0.5738,0.0673,0.5638,0.0527
+Baseline,0.5103,0.0193,0.5166,0.0354
+Correlation filter,0.551,0.0039,0.5713,0.0276
+No multicollinearity,0.5202,0.0118,0.5247,0.0255
+PCA,0.548,0.0103,0.5808,0.0125
+With target lags,0.7891,0.033,0.8841,0.0023
+Ablation: remove price_technical,0.5003,0.0513,0.517,0.0876
+Ablation: remove volatility,0.5022,0.0207,0.522,0.0138
+Ablation: remove volume,0.5196,0.0156,0.5489,0.0366
+Ablation: remove price_lags,0.5092,0.0254,0.5143,0.0477
+Ablation: remove macro,0.5374,0.008,0.5193,0.0047
+Ablation: remove news,0.4669,0.0284,0.4838,0.0589
+Ablation: remove temporal,0.4746,0.0278,0.4989,0.0672
+Ablation: remove market,0.5346,0.0225,0.5575,0.0336
+Horizon 5d,0.5232,0.0104,0.532,0.0277
+Horizon 20d,0.5103,0.0193,0.5166,0.0354
+Horizon 200d,0.6244,0.0809,0.6403,0.1081
