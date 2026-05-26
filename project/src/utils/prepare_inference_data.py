@@ -6,8 +6,8 @@ from pathlib import Path
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-# ========== Конфигурация ==========
-BASE_DIR = Path.cwd().parent.parent   # корень проекта (если скрипт в src/)
+# Конфигурация
+BASE_DIR = Path.cwd().parent.parent
 PROCESSED_DIR = BASE_DIR / "bigdata" / "processed"
 ARTIFACTS_DIR = BASE_DIR / "artifacts" / "final_models"
 DATA_DIR = BASE_DIR / "data"
@@ -17,12 +17,12 @@ SEQ_LEN = 20
 VAL_START = '2022-01-01'
 MIN_TRAIN_DAYS = SEQ_LEN + 10
 
-# ========== Загрузка данных и списка признаков ==========
+# Загрузка данных и списка признаков
 df = pd.read_parquet(PROCESSED_DIR / "combined_features.parquet")
 with open(PROCESSED_DIR / "feature_columns.txt") as f:
     all_feature_cols = [line.strip() for line in f if line.strip()]
 
-# ========== Фильтрация тикеров (как в обучении) ==========
+# Фильтрация тикеров (как в обучении)
 valid_tickers = []
 for ticker in df['ticker'].unique():
     ticker_df = df[df['ticker'] == ticker]
@@ -32,11 +32,11 @@ for ticker in df['ticker'].unique():
 
 print(f"Оставлено тикеров: {len(valid_tickers)}")
 
-# ========== Загрузка обученных трансформеров ==========
+# Загрузка обученных трансформеров
 scaler = joblib.load(ARTIFACTS_DIR / "pca_scaler.pkl")
 pca = joblib.load(ARTIFACTS_DIR / "pca_model.pkl")
 
-# ========== Применяем скейлер и PCA ко всем строкам (без разбиения на окна) ==========
+# Применяем скейлер и PCA ко всем строкам (без разбиения на окна)
 all_rows = []
 for ticker in valid_tickers:
     ticker_data = df[df['ticker'] == ticker].sort_values('date').copy()
@@ -48,7 +48,7 @@ for ticker in valid_tickers:
     # Берём только последние SEQ_LEN строк (минимально необходимое)
     last_rows = ticker_data.iloc[-SEQ_LEN:].copy()
     # Применяем scaler и PCA
-    X_df = last_rows[all_feature_cols]          # оставляем DataFrame
+    X_df = last_rows[all_feature_cols]
     X_scaled = scaler.transform(X_df)
     pca_vals = pca.transform(X_scaled)
     # Создаём DataFrame с PCA-компонентами
@@ -61,7 +61,7 @@ for ticker in valid_tickers:
 df_pca_minimal = pd.concat(all_rows, ignore_index=True)
 df_pca_minimal = df_pca_minimal.sort_values(['ticker', 'date']).reset_index(drop=True)
 
-# ========== Сохраняем ==========
+# Сохраняем
 df_pca_minimal.to_parquet(DATA_DIR / "pca_features.parquet", index=False)
 joblib.dump(valid_tickers, DATA_DIR / "valid_tickers.pkl")
 

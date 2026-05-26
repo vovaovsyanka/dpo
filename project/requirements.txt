@@ -17,4 +17,10 @@ xgboost
 lightgbm
 darts
 arch
+matplotlib
+scipy
+statsmodels
+tqdm
+torch
+joblib
 #pip install torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128

@@ -3,16 +3,16 @@ import random
 import joblib
 from pathlib import Path
 
-# ========== Конфигурация ==========
-API_URL = "http://localhost:8000/predict"   # адрес вашего сервера
-DATA_DIR = Path(__file__).parent.parent / "data"   # папка с данными
+# Конфигурация
+API_URL = "http://localhost:8000/predict"
+DATA_DIR = Path(__file__).parent.parent / "data"
 
-# ========== Загрузка списка валидных тикеров ==========
+# Загрузка списка валидных тикеров
 valid_tickers = joblib.load(DATA_DIR / "valid_tickers.pkl")
 print(f"Загружено валидных тикеров: {len(valid_tickers)}")
 
-# ========== Выбор 5 случайных тикеров ==========
-random.seed(42)  # для воспроизводимости
+# Выбор 5 случайных тикеров
+random.seed(42)
 sample_tickers = random.sample(valid_tickers, min(5, len(valid_tickers)))
 
 # Добавляем один заведомо несуществующий тикер
@@ -22,7 +22,7 @@ print("\nТестируемые тикеры:")
 for t in test_tickers:
     print(f"  - {t}")
 
-# ========== Отправка запросов ==========
+# Отправка запросов
 print("\n" + "="*50)
 for ticker in test_tickers:
     print(f"\nЗапрос для тикера: {ticker}")
