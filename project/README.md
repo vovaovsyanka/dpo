@@ -22,15 +22,20 @@
 Проект организован в следующей структуре:
 
 - `requirements.txt` – зависимости проекта.
+- `.env.example` – шаблон переменных окружения
 - `report.md` – отчёт по проекту.
+- `README.md` – данный файл
 - `self-checklist.md` – чеклист самопроверки.
 - `notebooks/` – экспериментальные ноутбуки (EDA, baseline, LSTM, GRU, Feature Engineering).
 - `src/` – основной код проекта:
+  - `data_preparation.ipynb` – скрипт сбора и подготовки данных
+  - `final_training.ipynb` – скрипт обучения финальной модели
   - `prepare_inference_data.py` – скрипт подготовки лёгкого датасета для инференса.
   - `predict.py` – класс для загрузки модели и предсказания.
   - `main.py` – FastAPI сервис.
+- `tests/`
   - `test_api.py` – тестовый скрипт для проверки API.
-- `data/` – демонстрационные данные (генерируются скриптом, не хранятся в репозитории).
+- `data/` – демонстрационные данные (В репозитории хранится малай часть даатасета).
 - `artifacts/` – сохранённые модели, scaler, PCA (не хранятся в репозитории).
 
 ---
@@ -50,13 +55,13 @@
 cd project
 
 # Создать виртуальное окружение
-python -m venv .venv
+python -m venv venv
 
 # Активировать окружение:
 # Windows:
-.venv\Scripts\activate
+venv\Scripts\activate
 # Linux / macOS:
-source .venv/bin/activate
+source venv/bin/activate
 
 # Установить зависимости
 pip install --upgrade pip
@@ -71,7 +76,7 @@ pip install -r requirements.txt
 
 ```bash
 cd project
-source .venv/bin/activate
+source venv\Scripts\activate
 python src/prepare_inference_data.py
 ```
 
@@ -83,8 +88,9 @@ python src/prepare_inference_data.py
 
 ```bash
 cd project
-source .venv/bin/activate
-uvicorn src.main:app --reload
+source venv\Scripts\activate
+cd src/service/
+uvicorn main:app --reload
 ```
 
 Сервис будет доступен по адресу: `http://localhost:8000`
@@ -94,8 +100,8 @@ uvicorn src.main:app --reload
 ```bash
 # В другом терминале
 cd project
-source .venv/bin/activate
-python src/test_api.py
+source venv\Scripts\activate
+python tests/test_api.py
 ```
 
 Или через `curl`:
@@ -126,7 +132,7 @@ curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -
 Для проверки API используется скрипт `src/test_api.py`. Он отправляет запросы к `/predict` и выводит ответы.
 
 ```bash
-python src/test_api.py
+python tests/test_api.py
 ```
 
 ---
@@ -134,7 +140,7 @@ python src/test_api.py
 ## 7. Демонстрация на защите
 
 На защите я:
-1. Запущу сервис через `uvicorn src.main:app --reload`.
+1. Запущу сервис через `uvicorn main:app --reload`.
 2. Покажу Swagger UI по адресу `http://localhost:8000/docs`.
 3. Отправлю несколько запросов через тестовый скрипт `test_api.py`.
 4. Продемонстрирую графики сравнения моделей и таблицы метрик из `report.md`.
